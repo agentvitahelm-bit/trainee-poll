@@ -1,0 +1,222 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Availability poll - Thomas Oldreive</title>
+<style>
+:root { color-scheme: light; }
+body { font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Arial, sans-serif; max-width: 880px; margin: 32px auto; padding: 0 18px; color: #1f2937; line-height: 1.5; font-size: 17px; background:#f8fafc; }
+.card { background:white; border: 1px solid #d0d7de; border-radius: 14px; padding: 24px; box-shadow: 0 2px 10px rgba(0,0,0,.06); margin-bottom:20px; }
+h1 { font-size: 1.65rem; margin: 0 0 8px; }
+h2 { font-size:1.3rem; margin:0 0 10px; }
+.meta { background: #f6f8fa; border: 1px solid #d0d7de; border-radius: 10px; padding: 14px 16px; margin: 16px 0; }
+.steps { background: #eef6ff; border: 1px solid #93c5fd; border-radius: 10px; padding: 14px 16px; margin: 16px 0; }
+.field { margin:18px 0; }
+.field label { display:block; font-weight:750; margin-bottom:6px; }
+.field input[type=text] { box-sizing:border-box; width:100%; max-width:520px; border:1px solid #9ca3af; border-radius:9px; padding:12px 13px; font-size:17px; }
+.week-heading { margin: 28px 0 8px; padding-top: 8px; font-size: 18px; font-weight: 750; color: #374151; border-top: 1px solid #e5e7eb; }
+.option { display: block; border: 1px solid #d0d7de; border-radius: 10px; padding: 13px 15px; margin: 10px 0; cursor: pointer; font-size: 17px; }
+.option:hover { background: #f6f8fa; }
+.option:has(input:checked) { border-color:#0f766e; background:#ecfdf5; }
+.option input { transform: scale(1.25); margin-right: 10px; }
+.none { border-color: #d97706; background: #fffbeb; }
+.actions { margin-top: 18px; display: flex; gap: 10px; flex-wrap: wrap; align-items:center; }
+button { border: 0; border-radius: 9px; padding: 14px 20px; font-weight: 700; cursor: pointer; font-size: 17px; }
+button:disabled { opacity:.6; cursor:wait; }
+.primary { background: #0f766e; color: white; }
+.secondary { background: #374151; color: white; }
+.status { display:none; padding:10px 12px; border-radius:8px; margin-top:12px; }
+.status.info { display:block; color:#1e3a8a; background:#eff6ff; }
+.status.success { display:block; color:#065f46; background:#ecfdf5; }
+.status.error { display:block; color:#991b1b; background:#fef2f2; }
+.result-heading { margin:22px 0 8px; font-weight:800; color:#374151; }
+.result-row { border:1px solid #e5e7eb; border-radius:9px; padding:11px 13px; margin:8px 0; }
+.result-time { font-weight:700; }
+.result-names { margin-top:3px; color:#0f766e; }
+.result-empty { color:#6b7280; font-style:italic; }
+.note { color: #6b7280; font-size: .92rem; margin-top: 14px; }
+.privacy { color:#7c2d12; background:#fff7ed; border:1px solid #fdba74; border-radius:8px; padding:10px 12px; }
+@media (max-width:600px) { body{margin:12px auto;padding:0 10px;font-size:16px}.card{padding:17px}.option{padding:12px 10px} }
+</style>
+</head>
+<body>
+<div class="card">
+  <h1>Availability poll</h1>
+  <div class="steps"><strong>How to respond:</strong><br>
+  1. Enter your name.<br>
+  2. Select every time that works for you, or select <strong>None of these times work for me</strong>.<br>
+  3. Click <strong>Save my availability</strong>.<br>
+  4. Your response will be stored, and the current group availability will update below.</div>
+
+  <div class="meta">
+    <strong>Student:</strong> Thomas Oldreive<br>
+    <strong>Event:</strong> MSc Defense<br>
+    <strong>Expected duration:</strong> Up to 2.5 hours<br>
+    <strong>Format/location:</strong> Zoom<br>
+    <strong>People being polled:</strong> Thomas Oldreive, Tamara Bodnar, Phil Barber, and Sayeh Bayat<br>
+    <strong>Response deadline:</strong> Within 48 hours of receiving the email
+  </div>
+
+  <p class="privacy"><strong>Visibility:</strong> Your name and selected availability will be visible to other people who have this poll link.</p>
+
+  <div class="field">
+    <label for="participant-name">Your name</label>
+    <input id="participant-name" type="text" maxlength="80" autocomplete="off" placeholder="Enter your full name">
+  </div>
+
+  <div class="week-heading">Week of August 17, 2026</div>
+  <label class="option" for="time-1"><input id="time-1" class="time" type="checkbox" value="Monday, August 17, 2026 - 9:30 AM MT start"> <span>Monday, August 17, 2026 - 9:30 AM MT start</span></label>
+  <label class="option" for="time-2"><input id="time-2" class="time" type="checkbox" value="Monday, August 17, 2026 - 1:00 PM MT start"> <span>Monday, August 17, 2026 - 1:00 PM MT start</span></label>
+  <label class="option" for="time-3"><input id="time-3" class="time" type="checkbox" value="Tuesday, August 18, 2026 - 9:30 AM MT start"> <span>Tuesday, August 18, 2026 - 9:30 AM MT start</span></label>
+  <label class="option" for="time-4"><input id="time-4" class="time" type="checkbox" value="Tuesday, August 18, 2026 - 1:00 PM MT start"> <span>Tuesday, August 18, 2026 - 1:00 PM MT start</span></label>
+  <label class="option" for="time-5"><input id="time-5" class="time" type="checkbox" value="Wednesday, August 19, 2026 - 9:30 AM MT start"> <span>Wednesday, August 19, 2026 - 9:30 AM MT start</span></label>
+  <label class="option" for="time-6"><input id="time-6" class="time" type="checkbox" value="Wednesday, August 19, 2026 - 1:00 PM MT start"> <span>Wednesday, August 19, 2026 - 1:00 PM MT start</span></label>
+  <label class="option" for="time-7"><input id="time-7" class="time" type="checkbox" value="Thursday, August 20, 2026 - 9:30 AM MT start"> <span>Thursday, August 20, 2026 - 9:30 AM MT start</span></label>
+  <label class="option" for="time-8"><input id="time-8" class="time" type="checkbox" value="Thursday, August 20, 2026 - 1:00 PM MT start"> <span>Thursday, August 20, 2026 - 1:00 PM MT start</span></label>
+  <label class="option" for="time-9"><input id="time-9" class="time" type="checkbox" value="Friday, August 21, 2026 - 9:30 AM MT start"> <span>Friday, August 21, 2026 - 9:30 AM MT start</span></label>
+  <label class="option" for="time-10"><input id="time-10" class="time" type="checkbox" value="Friday, August 21, 2026 - 1:00 PM MT start"> <span>Friday, August 21, 2026 - 1:00 PM MT start</span></label>
+  <div class="week-heading">Week of August 24, 2026</div>
+  <label class="option" for="time-11"><input id="time-11" class="time" type="checkbox" value="Monday, August 24, 2026 - 9:30 AM MT start"> <span>Monday, August 24, 2026 - 9:30 AM MT start</span></label>
+  <label class="option" for="time-12"><input id="time-12" class="time" type="checkbox" value="Monday, August 24, 2026 - 1:00 PM MT start"> <span>Monday, August 24, 2026 - 1:00 PM MT start</span></label>
+  <label class="option" for="time-13"><input id="time-13" class="time" type="checkbox" value="Tuesday, August 25, 2026 - 9:30 AM MT start"> <span>Tuesday, August 25, 2026 - 9:30 AM MT start</span></label>
+  <label class="option" for="time-14"><input id="time-14" class="time" type="checkbox" value="Tuesday, August 25, 2026 - 1:00 PM MT start"> <span>Tuesday, August 25, 2026 - 1:00 PM MT start</span></label>
+  <label class="option" for="time-15"><input id="time-15" class="time" type="checkbox" value="Wednesday, August 26, 2026 - 9:30 AM MT start"> <span>Wednesday, August 26, 2026 - 9:30 AM MT start</span></label>
+  <label class="option" for="time-16"><input id="time-16" class="time" type="checkbox" value="Wednesday, August 26, 2026 - 1:00 PM MT start"> <span>Wednesday, August 26, 2026 - 1:00 PM MT start</span></label>
+  <label class="option" for="time-17"><input id="time-17" class="time" type="checkbox" value="Thursday, August 27, 2026 - 9:30 AM MT start"> <span>Thursday, August 27, 2026 - 9:30 AM MT start</span></label>
+  <label class="option" for="time-18"><input id="time-18" class="time" type="checkbox" value="Thursday, August 27, 2026 - 1:00 PM MT start"> <span>Thursday, August 27, 2026 - 1:00 PM MT start</span></label>
+  <label class="option" for="time-19"><input id="time-19" class="time" type="checkbox" value="Friday, August 28, 2026 - 9:30 AM MT start"> <span>Friday, August 28, 2026 - 9:30 AM MT start</span></label>
+  <label class="option" for="time-20"><input id="time-20" class="time" type="checkbox" value="Friday, August 28, 2026 - 1:00 PM MT start"> <span>Friday, August 28, 2026 - 1:00 PM MT start</span></label>
+  <div class="week-heading">Week of August 31, 2026</div>
+  <label class="option" for="time-21"><input id="time-21" class="time" type="checkbox" value="Monday, August 31, 2026 - 9:30 AM MT start"> <span>Monday, August 31, 2026 - 9:30 AM MT start</span></label>
+  <label class="option" for="time-22"><input id="time-22" class="time" type="checkbox" value="Monday, August 31, 2026 - 1:00 PM MT start"> <span>Monday, August 31, 2026 - 1:00 PM MT start</span></label>
+  <label class="option none" for="none"><input id="none" type="checkbox" value="NONE"> <span><strong>None of these times work for me</strong></span></label>
+
+  <div class="actions">
+    <button id="save-button" class="primary" type="button">Save my availability</button>
+    <button id="refresh-button" class="secondary" type="button">Refresh results</button>
+  </div>
+  <div id="status" class="status" role="status" aria-live="polite"></div>
+</div>
+
+<div class="card">
+  <h2>Who is available so far</h2>
+  <p class="note">Availability is shared so the group can see which starts are most promising. Each fraction is: selected this time / total people who have completed the poll. Results refresh automatically.</p>
+  <div id="results"><p class="result-empty">Loading responses…</p></div>
+  <p id="last-updated" class="note"></p>
+</div>
+
+<script>
+const storageApi = "https://us-central1-vitahelm.cloudfunctions.net/traineePollApi";
+const pollId = "thomas-oldreive-msc-defense-2026-08-7f3c9a";
+const optionItems = [{"type": "heading", "label": "Week of August 17, 2026"}, {"type": "time", "label": "Monday, August 17, 2026 - 9:30 AM MT start"}, {"type": "time", "label": "Monday, August 17, 2026 - 1:00 PM MT start"}, {"type": "time", "label": "Tuesday, August 18, 2026 - 9:30 AM MT start"}, {"type": "time", "label": "Tuesday, August 18, 2026 - 1:00 PM MT start"}, {"type": "time", "label": "Wednesday, August 19, 2026 - 9:30 AM MT start"}, {"type": "time", "label": "Wednesday, August 19, 2026 - 1:00 PM MT start"}, {"type": "time", "label": "Thursday, August 20, 2026 - 9:30 AM MT start"}, {"type": "time", "label": "Thursday, August 20, 2026 - 1:00 PM MT start"}, {"type": "time", "label": "Friday, August 21, 2026 - 9:30 AM MT start"}, {"type": "time", "label": "Friday, August 21, 2026 - 1:00 PM MT start"}, {"type": "heading", "label": "Week of August 24, 2026"}, {"type": "time", "label": "Monday, August 24, 2026 - 9:30 AM MT start"}, {"type": "time", "label": "Monday, August 24, 2026 - 1:00 PM MT start"}, {"type": "time", "label": "Tuesday, August 25, 2026 - 9:30 AM MT start"}, {"type": "time", "label": "Tuesday, August 25, 2026 - 1:00 PM MT start"}, {"type": "time", "label": "Wednesday, August 26, 2026 - 9:30 AM MT start"}, {"type": "time", "label": "Wednesday, August 26, 2026 - 1:00 PM MT start"}, {"type": "time", "label": "Thursday, August 27, 2026 - 9:30 AM MT start"}, {"type": "time", "label": "Thursday, August 27, 2026 - 1:00 PM MT start"}, {"type": "time", "label": "Friday, August 28, 2026 - 9:30 AM MT start"}, {"type": "time", "label": "Friday, August 28, 2026 - 1:00 PM MT start"}, {"type": "heading", "label": "Week of August 31, 2026"}, {"type": "time", "label": "Monday, August 31, 2026 - 9:30 AM MT start"}, {"type": "time", "label": "Monday, August 31, 2026 - 1:00 PM MT start"}];
+const nameInput = document.getElementById('participant-name');
+const noneBox = document.getElementById('none');
+const saveButton = document.getElementById('save-button');
+const refreshButton = document.getElementById('refresh-button');
+const statusBox = document.getElementById('status');
+
+function selectedTimes() {
+  return Array.from(document.querySelectorAll('.time:checked')).map(x => x.value);
+}
+function updateMutualExclusion(event) {
+  if (event.target.id === 'none' && noneBox.checked) {
+    document.querySelectorAll('.time').forEach(x => x.checked = false);
+  }
+  if (event.target.classList.contains('time') && event.target.checked) noneBox.checked = false;
+}
+document.querySelectorAll('input[type=checkbox]').forEach(x => x.addEventListener('change', updateMutualExclusion));
+
+function setStatus(message, kind='info') {
+  statusBox.textContent = message;
+  statusBox.className = `status ${kind}`;
+}
+function setBusy(busy) {
+  saveButton.disabled = busy;
+  refreshButton.disabled = busy;
+}
+function make(tag, className, text) {
+  const el = document.createElement(tag);
+  if (className) el.className = className;
+  if (text !== undefined) el.textContent = text;
+  return el;
+}
+function renderResponses(data) {
+  const responses = Array.isArray(data.responses) ? data.responses : [];
+  const completedCount = responses.length;
+  const byTime = new Map(optionItems.filter(x => x.type === 'time').map(x => [x.label, []]));
+  responses.forEach(response => {
+    (Array.isArray(response.selections) ? response.selections : []).forEach(label => {
+      if (byTime.has(label)) byTime.get(label).push(response.name);
+    });
+  });
+  byTime.forEach(names => names.sort((a,b) => a.localeCompare(b)));
+
+  const results = document.getElementById('results');
+  results.innerHTML = '';
+  optionItems.forEach(item => {
+    if (item.type === 'heading') {
+      results.appendChild(make('div','result-heading',item.label));
+      return;
+    }
+    const row = make('div','result-row');
+    row.appendChild(make('div','result-time',item.label));
+    const names = byTime.get(item.label) || [];
+    const availabilityText = names.length
+      ? `Available (${names.length}/${completedCount}): ${names.join(', ')}`
+      : `Available (0/${completedCount}): No one has selected this time yet.`;
+    row.appendChild(make('div', names.length ? 'result-names' : 'result-empty', availabilityText));
+    results.appendChild(row);
+  });
+  document.getElementById('last-updated').textContent = `Last refreshed: ${new Date().toLocaleString()}`;
+}
+
+async function loadResponses(showMessage=false) {
+  try {
+    const response = await fetch(`${storageApi}?pollId=${encodeURIComponent(pollId)}`, {headers:{'Accept':'application/json'}, cache:'no-store'});
+    if (!response.ok) throw new Error(`Results request failed (${response.status})`);
+    renderResponses(await response.json());
+    if (showMessage) setStatus('Results refreshed.','success');
+  } catch (error) {
+    setStatus('The saved responses could not be loaded right now. Please try Refresh results.','error');
+  }
+}
+
+async function saveAvailability() {
+  const name = nameInput.value.trim().replace(/\s+/g,' ');
+  const selections = selectedTimes();
+  if (!name) { setStatus('Please enter your name before saving.','error'); nameInput.focus(); return; }
+  if (!selections.length && !noneBox.checked) { setStatus('Please select at least one time, or select “None of these times work for me.”','error'); return; }
+  setBusy(true);
+  setStatus('Saving your availability…','info');
+  try {
+    const response = await fetch(storageApi, {
+      method:'POST',
+      headers:{'Content-Type':'application/json','Accept':'application/json'},
+      body:JSON.stringify({pollId,name,selections})
+    });
+    const data = await response.json().catch(() => ({}));
+    if (!response.ok) throw new Error(data.error || `Save failed (${response.status})`);
+    renderResponses(data);
+    setStatus('Your availability has been saved. You can revise it by changing your selections and saving again with the same name.','success');
+  } catch (error) {
+    setStatus('Your availability could not be saved. Please check your connection and try again.','error');
+  } finally {
+    setBusy(false);
+  }
+}
+
+saveButton.addEventListener('click', saveAvailability);
+refreshButton.addEventListener('click', () => loadResponses(true));
+function clearParticipantName() {
+  nameInput.value = '';
+}
+try { localStorage.removeItem(`trainee-poll-name:${pollId}`); } catch (_) {}
+clearParticipantName();
+window.addEventListener('load', clearParticipantName);
+window.addEventListener('pageshow', clearParticipantName);
+loadResponses();
+setInterval(() => loadResponses(false), 15000);
+</script>
+</body>
+</html>
