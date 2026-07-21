@@ -51,15 +51,15 @@ const THOMAS_ROUND2_OPTIONS = optionsForDates([
 const MUHAMMAD_OPTIONS = [
   "Friday, August 28, 2026 - 9:30 AM MT start",
   ...optionsForDates([
-    ["Thursday", "October", 1],
-    ["Friday", "October", 2],
-    ["Monday", "October", 5],
     ["Tuesday", "October", 6],
     ["Wednesday", "October", 7],
     ["Thursday", "October", 8],
     ["Friday", "October", 9],
     ["Tuesday", "October", 13],
     ["Wednesday", "October", 14],
+    ["Thursday", "October", 15],
+    ["Friday", "October", 16],
+    ["Monday", "October", 19],
   ]),
 ];
 
