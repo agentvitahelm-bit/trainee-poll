@@ -32,6 +32,22 @@ const THOMAS_OPTIONS = optionsForDates([
   ["Monday", "August", 31],
 ]);
 
+const THOMAS_ROUND2_OPTIONS = optionsForDates([
+  ["Wednesday", "August", 12],
+  ["Thursday", "August", 13],
+  ["Friday", "August", 14],
+  ["Monday", "August", 31],
+  ["Tuesday", "September", 1],
+  ["Wednesday", "September", 2],
+  ["Thursday", "September", 3],
+  ["Friday", "September", 4],
+  ["Monday", "September", 28],
+  ["Tuesday", "September", 29],
+  ["Wednesday", "September", 30],
+  ["Thursday", "October", 1],
+  ["Friday", "October", 2],
+]);
+
 const MUHAMMAD_OPTIONS = [
   "Friday, August 28, 2026 - 9:30 AM MT start",
   ...optionsForDates([
@@ -49,6 +65,7 @@ const MUHAMMAD_OPTIONS = [
 
 const POLLS = new Map([
   ["thomas-oldreive-msc-defense-2026-08-7f3c9a", new Set(THOMAS_OPTIONS)],
+  ["thomas-oldreive-msc-defense-round2-2026-aug-sep-cfca2d", new Set(THOMAS_ROUND2_OPTIONS)],
   ["muhammad-mahajna-stage1-2026-aug-oct-63ec5a", new Set(MUHAMMAD_OPTIONS)],
 ]);
 
