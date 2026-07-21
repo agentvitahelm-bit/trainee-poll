@@ -10,8 +10,15 @@ initializeApp();
 const db = getFirestore();
 
 const ALLOWED_ORIGIN = "https://agentvitahelm-bit.github.io";
-const POLL_ID = "thomas-oldreive-msc-defense-2026-08-7f3c9a";
-const DATES = [
+
+function optionsForDates(dates) {
+  return dates.flatMap(([weekday, month, day]) => [
+    `${weekday}, ${month} ${day}, 2026 - 9:30 AM MT start`,
+    `${weekday}, ${month} ${day}, 2026 - 1:00 PM MT start`,
+  ]);
+}
+
+const THOMAS_OPTIONS = optionsForDates([
   ["Monday", "August", 17],
   ["Tuesday", "August", 18],
   ["Wednesday", "August", 19],
@@ -23,13 +30,27 @@ const DATES = [
   ["Thursday", "August", 27],
   ["Friday", "August", 28],
   ["Monday", "August", 31],
-];
-const ALLOWED_OPTIONS = new Set(
-  DATES.flatMap(([weekday, month, day]) => [
-    `${weekday}, ${month} ${day}, 2026 - 9:30 AM MT start`,
-    `${weekday}, ${month} ${day}, 2026 - 1:00 PM MT start`,
+]);
+
+const MUHAMMAD_OPTIONS = [
+  "Friday, August 28, 2026 - 9:30 AM MT start",
+  ...optionsForDates([
+    ["Thursday", "October", 1],
+    ["Friday", "October", 2],
+    ["Monday", "October", 5],
+    ["Tuesday", "October", 6],
+    ["Wednesday", "October", 7],
+    ["Thursday", "October", 8],
+    ["Friday", "October", 9],
+    ["Tuesday", "October", 13],
+    ["Wednesday", "October", 14],
   ]),
-);
+];
+
+const POLLS = new Map([
+  ["thomas-oldreive-msc-defense-2026-08-7f3c9a", new Set(THOMAS_OPTIONS)],
+  ["muhammad-mahajna-stage1-2026-aug-oct-63ec5a", new Set(MUHAMMAD_OPTIONS)],
+]);
 
 function setCors(req, res) {
   const origin = req.get("origin");
@@ -54,20 +75,20 @@ function participantId(name) {
   return crypto.createHash("sha256").update(name.toLocaleLowerCase("en-CA")).digest("hex").slice(0, 32);
 }
 
-function validateSelections(value) {
-  if (!Array.isArray(value) || value.length > ALLOWED_OPTIONS.size) return null;
-  if (!value.every((item) => typeof item === "string" && ALLOWED_OPTIONS.has(item))) return null;
+function validateSelections(value, allowedOptions) {
+  if (!Array.isArray(value) || value.length > allowedOptions.size) return null;
+  if (!value.every((item) => typeof item === "string" && allowedOptions.has(item))) return null;
   return [...new Set(value)];
 }
 
-async function listResponses() {
-  const snapshot = await db.collection("traineePolls").doc(POLL_ID).collection("responses").get();
+async function listResponses(pollId, allowedOptions) {
+  const snapshot = await db.collection("traineePolls").doc(pollId).collection("responses").get();
   return snapshot.docs
     .map((doc) => {
       const data = doc.data();
       return {
         name: typeof data.name === "string" ? data.name : "Participant",
-        selections: Array.isArray(data.selections) ? data.selections.filter((item) => ALLOWED_OPTIONS.has(item)) : [],
+        selections: Array.isArray(data.selections) ? data.selections.filter((item) => allowedOptions.has(item)) : [],
       };
     })
     .sort((a, b) => a.name.localeCompare(b.name));
@@ -86,14 +107,15 @@ exports.traineePollApi = onRequest(
     }
 
     const pollId = req.method === "GET" ? req.query.pollId : req.body && req.body.pollId;
-    if (pollId !== POLL_ID) {
+    const allowedOptions = POLLS.get(pollId);
+    if (!allowedOptions) {
       res.status(404).json({ error: "Poll not found" });
       return;
     }
 
     try {
       if (req.method === "GET") {
-        res.status(200).json({ pollId: POLL_ID, responses: await listResponses() });
+        res.status(200).json({ pollId, responses: await listResponses(pollId, allowedOptions) });
         return;
       }
       if (req.method !== "POST") {
@@ -103,7 +125,7 @@ exports.traineePollApi = onRequest(
       }
 
       const name = normalizeName(req.body && req.body.name);
-      const selections = validateSelections(req.body && req.body.selections);
+      const selections = validateSelections(req.body && req.body.selections, allowedOptions);
       if (!name) {
         res.status(400).json({ error: "Enter a valid name (1-80 characters)." });
         return;
@@ -114,14 +136,14 @@ exports.traineePollApi = onRequest(
       }
 
       const id = participantId(name);
-      await db.collection("traineePolls").doc(POLL_ID).collection("responses").doc(id).set(
+      await db.collection("traineePolls").doc(pollId).collection("responses").doc(id).set(
         { name, nameNormalized: name.toLocaleLowerCase("en-CA"), selections, updatedAt: FieldValue.serverTimestamp() },
         { merge: true },
       );
-      logger.info("Trainee poll response saved", { pollId: POLL_ID, participantId: id, selectionCount: selections.length });
-      res.status(200).json({ pollId: POLL_ID, saved: true, responses: await listResponses() });
+      logger.info("Trainee poll response saved", { pollId, participantId: id, selectionCount: selections.length });
+      res.status(200).json({ pollId, saved: true, responses: await listResponses(pollId, allowedOptions) });
     } catch (error) {
-      logger.error("Trainee poll request failed", { pollId: POLL_ID, error: error instanceof Error ? error.message : String(error) });
+      logger.error("Trainee poll request failed", { pollId, error: error instanceof Error ? error.message : String(error) });
       res.status(500).json({ error: "The poll service could not complete the request." });
     }
   },
