@@ -22,9 +22,13 @@
   "people_being_polled": [
     "Jacob Beaudoin",
     "Ethan MacDonald",
-    "Gordon E. Sarty"
+    "Gordon E. Sarty",
+    "Chathura Kumaragamage"
   ],
-  "email_to": ["Gordon E. Sarty <ges125@usask.ca>"],
-  "email_cc": ["Jacob Beaudoin <jacob.beaudoin@ucalgary.ca>"],
+  "email_to": ["Jacob Beaudoin <jacob.beaudoin@ucalgary.ca>"],
+  "email_cc": [
+    "Gordon E. Sarty <ges125@usask.ca>",
+    "Chathura Kumaragamage <chathura.kumaragamag@ucalgary.ca>"
+  ],
   "response_deadline": "Within 48 hours of receiving the email"
 }
