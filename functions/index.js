@@ -89,6 +89,7 @@ const POLLS = new Map([
   ["thomas-oldreive-msc-defense-round2-2026-aug-sep-cfca2d", new Set(THOMAS_ROUND2_OPTIONS)],
   ["muhammad-mahajna-stage1-2026-aug-oct-63ec5a", new Set(MUHAMMAD_OPTIONS)],
   ["jacob-beaudoin-supervisory-committee-2026-09-5d243a", new Set(JACOB_OPTIONS)],
+  ["hidehiro-shimizu-first-supervisory-committee-meeting-2026-09-8621cb", new Set(JACOB_OPTIONS)],
 ]);
 
 function setCors(req, res) {

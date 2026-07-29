@@ -1,0 +1,45 @@
+{
+  "created_at": "2026-07-29T12:04:18-06:00",
+  "source_evidence": "Hidehiro committee_notes.md and live Exchange header verification; time options copied from Jacob Beaudoin poll at Ethan MacDonald request",
+  "directory": "hidehiro-shimizu-first-supervisory-committee-meeting-sep-2026-8621cb",
+  "poll_id": "hidehiro-shimizu-first-supervisory-committee-meeting-2026-09-8621cb",
+  "student": "Hidehiro Shimizu",
+  "event": "First supervisory committee meeting",
+  "duration": "1 hour",
+  "location": "Zoom",
+  "deadline": "Friday, July 31, 2026 at 3:00 p.m. MT",
+  "people_being_polled": [
+    "Hidehiro Shimizu",
+    "Ethan MacDonald",
+    "Chathura Kumaragamage",
+    "Nicola (Nick) De Zanche",
+    "Richard Frayne"
+  ],
+  "email_to": [
+    "Hidehiro Shimizu <hidehiro.shimizu@ucalgary.ca>"
+  ],
+  "email_cc": [
+    "Chathura Kumaragamage <chathura.kumaragamag@ucalgary.ca>",
+    "Nicola (Nick) De Zanche <dezanche@ualberta.ca>",
+    "Richard Frayne <rfrayne@ucalgary.ca>"
+  ],
+  "dates": [
+    "2026-09-08",
+    "2026-09-09",
+    "2026-09-10",
+    "2026-09-11",
+    "2026-09-14",
+    "2026-09-15",
+    "2026-09-16",
+    "2026-09-17",
+    "2026-09-18"
+  ],
+  "times": [
+    "10:00 AM",
+    "11:00 AM",
+    "1:00 PM",
+    "2:00 PM",
+    "3:00 PM"
+  ],
+  "option_count": 45
+}
