@@ -12,7 +12,7 @@
     "Hidehiro Shimizu",
     "Ethan MacDonald",
     "Chathura Kumaragamage",
-    "Nicola (Nick) De Zanche",
+    "Nicola De Zanche",
     "Richard Frayne"
   ],
   "email_to": [
@@ -20,7 +20,7 @@
   ],
   "email_cc": [
     "Chathura Kumaragamage <chathura.kumaragamag@ucalgary.ca>",
-    "Nicola (Nick) De Zanche <dezanche@ualberta.ca>",
+    "Nicola De Zanche <dezanche@ualberta.ca>",
     "Richard Frayne <rfrayne@ucalgary.ca>"
   ],
   "dates": [
@@ -41,5 +41,6 @@
     "2:00 PM",
     "3:00 PM"
   ],
-  "option_count": 45
+  "option_count": 45,
+  "meeting_expectation": "The one-hour meeting will begin with a 20-minute presentation from Hidehiro, followed by discussion of his progress and project direction."
 }
