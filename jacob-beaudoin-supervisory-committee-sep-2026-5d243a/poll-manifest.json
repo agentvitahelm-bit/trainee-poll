@@ -1,0 +1,30 @@
+{
+  "created_at": "2026-07-29T11:23:57-06:00",
+  "source_evidence": "Ethan request on 2026-07-29 plus confirmed trainee committee records under Trainee_Organziaitons_Hermes",
+  "directory": "jacob-beaudoin-supervisory-committee-sep-2026-5d243a",
+  "poll_id": "jacob-beaudoin-supervisory-committee-2026-09-5d243a",
+  "event": "Supervisory committee meeting",
+  "duration": "60 minutes",
+  "format_location": "Zoom",
+  "meeting_structure": "20-minute presentation by Jacob followed by discussion of progress and project direction",
+  "groups": [
+    {
+      "heading": "September 7–11, 2026 (Labour Day excluded)",
+      "dates": ["2026-09-08", "2026-09-09", "2026-09-10", "2026-09-11"]
+    },
+    {
+      "heading": "September 14–18, 2026",
+      "dates": ["2026-09-14", "2026-09-15", "2026-09-16", "2026-09-17", "2026-09-18"]
+    }
+  ],
+  "start_times_mt": ["10:00 AM", "11:00 AM", "1:00 PM", "2:00 PM", "3:00 PM"],
+  "option_count": 45,
+  "people_being_polled": [
+    "Jacob Beaudoin",
+    "Ethan MacDonald",
+    "Gordon E. Sarty"
+  ],
+  "email_to": ["Gordon E. Sarty <ges125@usask.ca>"],
+  "email_cc": ["Jacob Beaudoin <jacob.beaudoin@ucalgary.ca>"],
+  "response_deadline": "Within 48 hours of receiving the email"
+}

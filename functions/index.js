@@ -63,10 +63,32 @@ const MUHAMMAD_OPTIONS = [
   ]),
 ];
 
+function optionsForTimes(dates, times) {
+  return dates.flatMap(([weekday, month, day]) =>
+    times.map((time) => `${weekday}, ${month} ${day}, 2026 - ${time} MT start`),
+  );
+}
+
+const JACOB_OPTIONS = optionsForTimes(
+  [
+    ["Tuesday", "September", 8],
+    ["Wednesday", "September", 9],
+    ["Thursday", "September", 10],
+    ["Friday", "September", 11],
+    ["Monday", "September", 14],
+    ["Tuesday", "September", 15],
+    ["Wednesday", "September", 16],
+    ["Thursday", "September", 17],
+    ["Friday", "September", 18],
+  ],
+  ["10:00 AM", "11:00 AM", "1:00 PM", "2:00 PM", "3:00 PM"],
+);
+
 const POLLS = new Map([
   ["thomas-oldreive-msc-defense-2026-08-7f3c9a", new Set(THOMAS_OPTIONS)],
   ["thomas-oldreive-msc-defense-round2-2026-aug-sep-cfca2d", new Set(THOMAS_ROUND2_OPTIONS)],
   ["muhammad-mahajna-stage1-2026-aug-oct-63ec5a", new Set(MUHAMMAD_OPTIONS)],
+  ["jacob-beaudoin-supervisory-committee-2026-09-5d243a", new Set(JACOB_OPTIONS)],
 ]);
 
 function setCors(req, res) {
