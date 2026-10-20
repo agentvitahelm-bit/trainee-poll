@@ -112,6 +112,14 @@ const NICOLE_STAGE2_OPTIONS = optionsForTimesInYear(
   ["9:30 AM", "1:00 PM"],
 );
 
+const AMIN_MSC_DEFENSE_OPTIONS = [
+  "Thursday, November 26, 2026 - 1:00 PM MT start",
+  "Friday, November 27, 2026 - 1:00 PM MT start",
+  "Monday, November 30, 2026 - 1:00 PM MT start",
+  "Thursday, December 3, 2026 - 1:00 PM MT start",
+  "Friday, December 4, 2026 - 1:00 PM MT start",
+];
+
 const POLLS = new Map([
   ["thomas-oldreive-msc-defense-2026-08-7f3c9a", new Set(THOMAS_OPTIONS)],
   ["thomas-oldreive-msc-defense-round2-2026-aug-sep-cfca2d", new Set(THOMAS_ROUND2_OPTIONS)],
@@ -119,6 +127,7 @@ const POLLS = new Map([
   ["jacob-beaudoin-supervisory-committee-2026-09-5d243a", new Set(JACOB_OPTIONS)],
   ["hidehiro-shimizu-first-supervisory-committee-meeting-2026-09-8621cb", new Set(JACOB_OPTIONS)],
   ["nicole-lofroth-stage2-2027-01-02-383491ff", new Set(NICOLE_STAGE2_OPTIONS)],
+  ["amin-morshedi-msc-defense-2026-nov-dec-e0d3d05e", new Set(AMIN_MSC_DEFENSE_OPTIONS)],
 ]);
 
 function setCors(req, res) {

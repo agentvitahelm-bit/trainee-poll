@@ -1,0 +1,30 @@
+{
+  "poll_id": "amin-morshedi-msc-defense-2026-nov-dec-e0d3d05e",
+  "student": "Mohammad Amin Morshedi",
+  "event": "MSc thesis defence",
+  "duration": "Up to 2.5 hours",
+  "format": "Zoom",
+  "participants": [
+    "Mohammad Amin Morshedi",
+    "Ethan MacDonald",
+    "Ashley Harris",
+    "Julio Garcia Flores",
+    "Richard Frayne"
+  ],
+  "response_deadline": "Within 48 hours of receiving the poll",
+  "options": [
+    "Thursday, November 26, 2026 - 1:00 PM MT start",
+    "Friday, November 27, 2026 - 1:00 PM MT start",
+    "Monday, November 30, 2026 - 1:00 PM MT start",
+    "Thursday, December 3, 2026 - 1:00 PM MT start",
+    "Friday, December 4, 2026 - 1:00 PM MT start"
+  ],
+  "notes": [
+    "Options were limited to 2.5-hour blocks reported free by Ethan's live Exchange server-side recurrence-expanded free/busy data.",
+    "Both standard morning (9:30 AM) and afternoon (1:00 PM) starts were checked across the weeks of November 23, November 30, and December 7, 2026. No standard morning start or December 7-week start fit a full 2.5-hour block."
+  ],
+  "source_evidence": [
+    "Live UCalgary Exchange thread Invitation to join Amin Morshedi’s committee through 2026-10-20 confirms Richard Frayne’s acceptance and names Ashley Harris and Julio Garcia Flores as the other committee members.",
+    "Live Exchange ActiveSync ResolveRecipients/Availability query for 2026-11-23 through 2026-12-11."
+  ]
+}
