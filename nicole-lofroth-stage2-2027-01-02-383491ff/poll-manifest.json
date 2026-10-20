@@ -1,0 +1,53 @@
+{
+  "poll_id": "nicole-lofroth-stage2-2027-01-02-383491ff",
+  "student": "Nicole Lofroth",
+  "event": "Stage 2 Field of Study examination",
+  "duration": "2 hours",
+  "format": "Zoom",
+  "participants": [
+    "Nicole Lofroth",
+    "Ethan MacDonald",
+    "G. Bruce Pike",
+    "Chathura Kumaragamage",
+    "Aravind Ganesh",
+    "Johanna Ospel",
+    "Ashley Harris"
+  ],
+  "response_deadline": "2026-10-23 16:00 MT",
+  "options": [
+    "Monday, January 25, 2027 - 9:30 AM MT start",
+    "Monday, January 25, 2027 - 1:00 PM MT start",
+    "Tuesday, January 26, 2027 - 9:30 AM MT start",
+    "Tuesday, January 26, 2027 - 1:00 PM MT start",
+    "Wednesday, January 27, 2027 - 9:30 AM MT start",
+    "Wednesday, January 27, 2027 - 1:00 PM MT start",
+    "Thursday, January 28, 2027 - 9:30 AM MT start",
+    "Thursday, January 28, 2027 - 1:00 PM MT start",
+    "Friday, January 29, 2027 - 9:30 AM MT start",
+    "Friday, January 29, 2027 - 1:00 PM MT start",
+    "Monday, February 1, 2027 - 9:30 AM MT start",
+    "Monday, February 1, 2027 - 1:00 PM MT start",
+    "Tuesday, February 2, 2027 - 9:30 AM MT start",
+    "Tuesday, February 2, 2027 - 1:00 PM MT start",
+    "Wednesday, February 3, 2027 - 9:30 AM MT start",
+    "Wednesday, February 3, 2027 - 1:00 PM MT start",
+    "Thursday, February 4, 2027 - 9:30 AM MT start",
+    "Thursday, February 4, 2027 - 1:00 PM MT start",
+    "Friday, February 5, 2027 - 9:30 AM MT start",
+    "Friday, February 5, 2027 - 1:00 PM MT start",
+    "Monday, February 8, 2027 - 9:30 AM MT start",
+    "Monday, February 8, 2027 - 1:00 PM MT start",
+    "Tuesday, February 9, 2027 - 9:30 AM MT start",
+    "Tuesday, February 9, 2027 - 1:00 PM MT start",
+    "Wednesday, February 10, 2027 - 9:30 AM MT start",
+    "Wednesday, February 10, 2027 - 1:00 PM MT start",
+    "Thursday, February 11, 2027 - 9:30 AM MT start",
+    "Thursday, February 11, 2027 - 1:00 PM MT start",
+    "Friday, February 12, 2027 - 9:30 AM MT start",
+    "Friday, February 12, 2027 - 1:00 PM MT start"
+  ],
+  "notes": [
+    "Broad three-week window used because Exchange free/busy lookup was unavailable (Thunderbird/TbSync OAuth context could not be read).",
+    "Options begin after the three-month minimum following proposed topic submission on 2026-10-19."
+  ]
+}

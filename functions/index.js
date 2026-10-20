@@ -69,6 +69,12 @@ function optionsForTimes(dates, times) {
   );
 }
 
+function optionsForTimesInYear(year, dates, times) {
+  return dates.flatMap(([weekday, month, day]) =>
+    times.map((time) => `${weekday}, ${month} ${day}, ${year} - ${time} MT start`),
+  );
+}
+
 const JACOB_OPTIONS = optionsForTimes(
   [
     ["Tuesday", "September", 8],
@@ -84,12 +90,35 @@ const JACOB_OPTIONS = optionsForTimes(
   ["10:00 AM", "11:00 AM", "1:00 PM", "2:00 PM", "3:00 PM"],
 );
 
+const NICOLE_STAGE2_OPTIONS = optionsForTimesInYear(
+  2027,
+  [
+    ["Monday", "January", 25],
+    ["Tuesday", "January", 26],
+    ["Wednesday", "January", 27],
+    ["Thursday", "January", 28],
+    ["Friday", "January", 29],
+    ["Monday", "February", 1],
+    ["Tuesday", "February", 2],
+    ["Wednesday", "February", 3],
+    ["Thursday", "February", 4],
+    ["Friday", "February", 5],
+    ["Monday", "February", 8],
+    ["Tuesday", "February", 9],
+    ["Wednesday", "February", 10],
+    ["Thursday", "February", 11],
+    ["Friday", "February", 12],
+  ],
+  ["9:30 AM", "1:00 PM"],
+);
+
 const POLLS = new Map([
   ["thomas-oldreive-msc-defense-2026-08-7f3c9a", new Set(THOMAS_OPTIONS)],
   ["thomas-oldreive-msc-defense-round2-2026-aug-sep-cfca2d", new Set(THOMAS_ROUND2_OPTIONS)],
   ["muhammad-mahajna-stage1-2026-aug-oct-63ec5a", new Set(MUHAMMAD_OPTIONS)],
   ["jacob-beaudoin-supervisory-committee-2026-09-5d243a", new Set(JACOB_OPTIONS)],
   ["hidehiro-shimizu-first-supervisory-committee-meeting-2026-09-8621cb", new Set(JACOB_OPTIONS)],
+  ["nicole-lofroth-stage2-2027-01-02-383491ff", new Set(NICOLE_STAGE2_OPTIONS)],
 ]);
 
 function setCors(req, res) {
