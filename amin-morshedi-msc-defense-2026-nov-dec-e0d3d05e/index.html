@@ -67,13 +67,19 @@ button:disabled { opacity:.6; cursor:wait; }
     <input id="participant-name" type="text" maxlength="80" autocomplete="off" placeholder="Enter your full name">
   </div>
 
-  <div class="week-heading">Week of November 23, 2026</div>
-  <label class="option" for="time-1"><input id="time-1" class="time" type="checkbox" value="Thursday, November 26, 2026 - 1:00 PM MT start"> <span>Thursday, November 26, 2026 - 1:00 PM MT start</span></label>
-  <label class="option" for="time-2"><input id="time-2" class="time" type="checkbox" value="Friday, November 27, 2026 - 1:00 PM MT start"> <span>Friday, November 27, 2026 - 1:00 PM MT start</span></label>
-  <div class="week-heading">Week of November 30, 2026</div>
-  <label class="option" for="time-3"><input id="time-3" class="time" type="checkbox" value="Monday, November 30, 2026 - 1:00 PM MT start"> <span>Monday, November 30, 2026 - 1:00 PM MT start</span></label>
-  <label class="option" for="time-4"><input id="time-4" class="time" type="checkbox" value="Thursday, December 3, 2026 - 1:00 PM MT start"> <span>Thursday, December 3, 2026 - 1:00 PM MT start</span></label>
-  <label class="option" for="time-5"><input id="time-5" class="time" type="checkbox" value="Friday, December 4, 2026 - 1:00 PM MT start"> <span>Friday, December 4, 2026 - 1:00 PM MT start</span></label>
+  <label class="option" for="time-1"><input id="time-1" class="time" type="checkbox" value="Monday, November 23, 2026 - 1:00 PM MT start"> <span>Monday, November 23, 2026 - 1:00 PM MT start</span></label>
+  <label class="option" for="time-2"><input id="time-2" class="time" type="checkbox" value="Tuesday, November 24, 2026 - 1:00 PM MT start"> <span>Tuesday, November 24, 2026 - 1:00 PM MT start</span></label>
+  <label class="option" for="time-3"><input id="time-3" class="time" type="checkbox" value="Wednesday, November 25, 2026 - 1:00 PM MT start"> <span>Wednesday, November 25, 2026 - 1:00 PM MT start</span></label>
+  <label class="option" for="time-4"><input id="time-4" class="time" type="checkbox" value="Thursday, November 26, 2026 - 1:00 PM MT start"> <span>Thursday, November 26, 2026 - 1:00 PM MT start</span></label>
+  <label class="option" for="time-5"><input id="time-5" class="time" type="checkbox" value="Friday, November 27, 2026 - 1:00 PM MT start"> <span>Friday, November 27, 2026 - 1:00 PM MT start</span></label>
+  <label class="option" for="time-6"><input id="time-6" class="time" type="checkbox" value="Monday, November 30, 2026 - 1:00 PM MT start"> <span>Monday, November 30, 2026 - 1:00 PM MT start</span></label>
+  <label class="option" for="time-7"><input id="time-7" class="time" type="checkbox" value="Tuesday, December 1, 2026 - 1:00 PM MT start"> <span>Tuesday, December 1, 2026 - 1:00 PM MT start</span></label>
+  <label class="option" for="time-8"><input id="time-8" class="time" type="checkbox" value="Wednesday, December 2, 2026 - 1:00 PM MT start"> <span>Wednesday, December 2, 2026 - 1:00 PM MT start</span></label>
+  <label class="option" for="time-9"><input id="time-9" class="time" type="checkbox" value="Thursday, December 3, 2026 - 1:00 PM MT start"> <span>Thursday, December 3, 2026 - 1:00 PM MT start</span></label>
+  <label class="option" for="time-10"><input id="time-10" class="time" type="checkbox" value="Friday, December 4, 2026 - 1:00 PM MT start"> <span>Friday, December 4, 2026 - 1:00 PM MT start</span></label>
+  <label class="option" for="time-11"><input id="time-11" class="time" type="checkbox" value="Monday, December 7, 2026 - 1:00 PM MT start"> <span>Monday, December 7, 2026 - 1:00 PM MT start</span></label>
+  <label class="option" for="time-12"><input id="time-12" class="time" type="checkbox" value="Tuesday, December 8, 2026 - 1:00 PM MT start"> <span>Tuesday, December 8, 2026 - 1:00 PM MT start</span></label>
+  <label class="option" for="time-13"><input id="time-13" class="time" type="checkbox" value="Wednesday, December 9, 2026 - 1:00 PM MT start"> <span>Wednesday, December 9, 2026 - 1:00 PM MT start</span></label>
   <label class="option none" for="none"><input id="none" type="checkbox" value="NONE"> <span><strong>None of these times work for me</strong></span></label>
 
   <div class="actions">
@@ -93,7 +99,7 @@ button:disabled { opacity:.6; cursor:wait; }
 <script>
 const storageApi = "https://us-central1-vitahelm.cloudfunctions.net/traineePollApi";
 const pollId = "amin-morshedi-msc-defense-2026-nov-dec-e0d3d05e";
-const optionItems = [{"type": "heading", "label": "Week of November 23, 2026"}, {"type": "time", "label": "Thursday, November 26, 2026 - 1:00 PM MT start"}, {"type": "time", "label": "Friday, November 27, 2026 - 1:00 PM MT start"}, {"type": "heading", "label": "Week of November 30, 2026"}, {"type": "time", "label": "Monday, November 30, 2026 - 1:00 PM MT start"}, {"type": "time", "label": "Thursday, December 3, 2026 - 1:00 PM MT start"}, {"type": "time", "label": "Friday, December 4, 2026 - 1:00 PM MT start"}];
+const optionItems = [{"type": "time", "label": "Monday, November 23, 2026 - 1:00 PM MT start"}, {"type": "time", "label": "Tuesday, November 24, 2026 - 1:00 PM MT start"}, {"type": "time", "label": "Wednesday, November 25, 2026 - 1:00 PM MT start"}, {"type": "time", "label": "Thursday, November 26, 2026 - 1:00 PM MT start"}, {"type": "time", "label": "Friday, November 27, 2026 - 1:00 PM MT start"}, {"type": "time", "label": "Monday, November 30, 2026 - 1:00 PM MT start"}, {"type": "time", "label": "Tuesday, December 1, 2026 - 1:00 PM MT start"}, {"type": "time", "label": "Wednesday, December 2, 2026 - 1:00 PM MT start"}, {"type": "time", "label": "Thursday, December 3, 2026 - 1:00 PM MT start"}, {"type": "time", "label": "Friday, December 4, 2026 - 1:00 PM MT start"}, {"type": "time", "label": "Monday, December 7, 2026 - 1:00 PM MT start"}, {"type": "time", "label": "Tuesday, December 8, 2026 - 1:00 PM MT start"}, {"type": "time", "label": "Wednesday, December 9, 2026 - 1:00 PM MT start"}];
 const nameInput = document.getElementById('participant-name');
 const noneBox = document.getElementById('none');
 const saveButton = document.getElementById('save-button');
