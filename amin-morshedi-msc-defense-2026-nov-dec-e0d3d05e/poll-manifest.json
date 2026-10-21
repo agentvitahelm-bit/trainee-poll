@@ -13,24 +13,28 @@
   ],
   "response_deadline": "Within 48 hours of receiving the poll",
   "options": [
+    "Monday, November 23, 2026 - 10:00 AM MT start",
     "Monday, November 23, 2026 - 1:00 PM MT start",
-    "Tuesday, November 24, 2026 - 1:00 PM MT start",
     "Wednesday, November 25, 2026 - 1:00 PM MT start",
+    "Thursday, November 26, 2026 - 10:00 AM MT start",
     "Thursday, November 26, 2026 - 1:00 PM MT start",
     "Friday, November 27, 2026 - 1:00 PM MT start",
+    "Monday, November 30, 2026 - 10:00 AM MT start",
     "Monday, November 30, 2026 - 1:00 PM MT start",
-    "Tuesday, December 1, 2026 - 1:00 PM MT start",
+    "Wednesday, December 2, 2026 - 10:00 AM MT start",
     "Wednesday, December 2, 2026 - 1:00 PM MT start",
+    "Thursday, December 3, 2026 - 10:00 AM MT start",
     "Thursday, December 3, 2026 - 1:00 PM MT start",
     "Friday, December 4, 2026 - 1:00 PM MT start",
+    "Monday, December 7, 2026 - 10:00 AM MT start",
     "Monday, December 7, 2026 - 1:00 PM MT start",
-    "Tuesday, December 8, 2026 - 1:00 PM MT start",
+    "Wednesday, December 9, 2026 - 10:00 AM MT start",
     "Wednesday, December 9, 2026 - 1:00 PM MT start"
   ],
   "notes": [
-    "Options include blocks reported free by Ethan's live Exchange server-side recurrence-expanded free/busy data, plus afternoon blocks occupied only by Ethan's regular recurring research or project-team meetings that he has authorized treating as reschedulable for Amin's defence.",
-    "Both standard morning (9:30 AM) and afternoon (1:00 PM) starts were checked across the weeks of November 23, November 30, and December 7, 2026. Morning blocks remain excluded because they overlap separate recurring calendar holds, not only reschedulable team meetings.",
-    "Department-wide meetings and one-off commitments were not treated as reschedulable."
+    "Options include blocks reported free by Ethan's live Exchange server-side recurrence-expanded free/busy data, plus blocks occupied only by Ethan's recurring research or project-team meetings and ordinary protected holds that he has authorized treating as reschedulable for Amin's defence.",
+    "Morning options use a 10:00 AM MT start and run to 12:30 PM. They were included only where relaxing the usual 10:00 AM to noon hold or its following research-team meeting does not displace teaching, a department-wide meeting, or a one-off commitment.",
+    "All Tuesdays were excluded because Ethan is teaching. Department-wide meetings, teaching commitments, and one-off commitments were not treated as reschedulable."
   ],
   "source_evidence": [
     "Live UCalgary Exchange thread Invitation to join Amin Morshedi’s committee through 2026-10-20 confirms Richard Frayne’s acceptance and names Ashley Harris and Julio Garcia Flores as the other committee members.",

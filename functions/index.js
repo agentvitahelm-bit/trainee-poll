@@ -113,18 +113,22 @@ const NICOLE_STAGE2_OPTIONS = optionsForTimesInYear(
 );
 
 const AMIN_MSC_DEFENSE_OPTIONS = [
+  "Monday, November 23, 2026 - 10:00 AM MT start",
   "Monday, November 23, 2026 - 1:00 PM MT start",
-  "Tuesday, November 24, 2026 - 1:00 PM MT start",
   "Wednesday, November 25, 2026 - 1:00 PM MT start",
+  "Thursday, November 26, 2026 - 10:00 AM MT start",
   "Thursday, November 26, 2026 - 1:00 PM MT start",
   "Friday, November 27, 2026 - 1:00 PM MT start",
+  "Monday, November 30, 2026 - 10:00 AM MT start",
   "Monday, November 30, 2026 - 1:00 PM MT start",
-  "Tuesday, December 1, 2026 - 1:00 PM MT start",
+  "Wednesday, December 2, 2026 - 10:00 AM MT start",
   "Wednesday, December 2, 2026 - 1:00 PM MT start",
+  "Thursday, December 3, 2026 - 10:00 AM MT start",
   "Thursday, December 3, 2026 - 1:00 PM MT start",
   "Friday, December 4, 2026 - 1:00 PM MT start",
+  "Monday, December 7, 2026 - 10:00 AM MT start",
   "Monday, December 7, 2026 - 1:00 PM MT start",
-  "Tuesday, December 8, 2026 - 1:00 PM MT start",
+  "Wednesday, December 9, 2026 - 10:00 AM MT start",
   "Wednesday, December 9, 2026 - 1:00 PM MT start",
 ];
 
