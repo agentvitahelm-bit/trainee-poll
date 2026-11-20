@@ -112,6 +112,27 @@ const NICOLE_STAGE2_OPTIONS = optionsForTimesInYear(
   ["9:30 AM", "1:00 PM"],
 );
 
+const NICOLE_STAGE2_ROUND2_OPTIONS = [
+  "Tuesday, February 16, 2027 - 9:30 AM MST (Alberta) start",
+  "Tuesday, February 16, 2027 - 1:00 PM MST (Alberta) start",
+  "Wednesday, February 17, 2027 - 9:30 AM MST (Alberta) start",
+  "Wednesday, February 17, 2027 - 1:00 PM MST (Alberta) start",
+  "Thursday, February 18, 2027 - 9:30 AM MST (Alberta) start",
+  "Thursday, February 18, 2027 - 1:00 PM MST (Alberta) start",
+  "Friday, February 19, 2027 - 9:30 AM MST (Alberta) start",
+  "Friday, February 19, 2027 - 1:00 PM MST (Alberta) start",
+  "Monday, February 22, 2027 - 9:30 AM MST (Alberta) start",
+  "Monday, February 22, 2027 - 1:00 PM MST (Alberta) start",
+  "Tuesday, February 23, 2027 - 9:30 AM MST (Alberta) start",
+  "Tuesday, February 23, 2027 - 1:00 PM MST (Alberta) start",
+  "Wednesday, February 24, 2027 - 9:30 AM MST (Alberta) start",
+  "Wednesday, February 24, 2027 - 1:00 PM MST (Alberta) start",
+  "Thursday, February 25, 2027 - 9:30 AM MST (Alberta) start",
+  "Thursday, February 25, 2027 - 1:00 PM MST (Alberta) start",
+  "Friday, February 26, 2027 - 9:30 AM MST (Alberta) start",
+  "Friday, February 26, 2027 - 1:00 PM MST (Alberta) start",
+];
+
 const AMIN_MSC_DEFENSE_OPTIONS = [
   "Monday, November 23, 2026 - 10:00 AM MST (Alberta) start",
   "Monday, November 23, 2026 - 1:00 PM MST (Alberta) start",
@@ -142,6 +163,7 @@ const POLLS = new Map([
   ["jacob-beaudoin-supervisory-committee-2026-09-5d243a", new Set(JACOB_OPTIONS)],
   ["hidehiro-shimizu-first-supervisory-committee-meeting-2026-09-8621cb", new Set(JACOB_OPTIONS)],
   ["nicole-lofroth-stage2-2027-01-02-383491ff", new Set(NICOLE_STAGE2_OPTIONS)],
+  ["nicole-lofroth-stage2-round2-2027-02-15-26-98b543ad", new Set(NICOLE_STAGE2_ROUND2_OPTIONS)],
   ["amin-morshedi-msc-defense-2026-nov-dec-e0d3d05e", new Set(AMIN_MSC_DEFENSE_OPTIONS)],
 ]);
 
