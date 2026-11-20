@@ -113,24 +113,24 @@ const NICOLE_STAGE2_OPTIONS = optionsForTimesInYear(
 );
 
 const NICOLE_STAGE2_ROUND2_OPTIONS = [
-  "Tuesday, February 16, 2027 - 9:30 AM MST (Alberta) start",
-  "Tuesday, February 16, 2027 - 1:00 PM MST (Alberta) start",
-  "Wednesday, February 17, 2027 - 9:30 AM MST (Alberta) start",
-  "Wednesday, February 17, 2027 - 1:00 PM MST (Alberta) start",
-  "Thursday, February 18, 2027 - 9:30 AM MST (Alberta) start",
-  "Thursday, February 18, 2027 - 1:00 PM MST (Alberta) start",
-  "Friday, February 19, 2027 - 9:30 AM MST (Alberta) start",
-  "Friday, February 19, 2027 - 1:00 PM MST (Alberta) start",
   "Monday, February 22, 2027 - 9:30 AM MST (Alberta) start",
   "Monday, February 22, 2027 - 1:00 PM MST (Alberta) start",
   "Tuesday, February 23, 2027 - 9:30 AM MST (Alberta) start",
   "Tuesday, February 23, 2027 - 1:00 PM MST (Alberta) start",
   "Wednesday, February 24, 2027 - 9:30 AM MST (Alberta) start",
-  "Wednesday, February 24, 2027 - 1:00 PM MST (Alberta) start",
   "Thursday, February 25, 2027 - 9:30 AM MST (Alberta) start",
   "Thursday, February 25, 2027 - 1:00 PM MST (Alberta) start",
   "Friday, February 26, 2027 - 9:30 AM MST (Alberta) start",
   "Friday, February 26, 2027 - 1:00 PM MST (Alberta) start",
+  "Monday, March 1, 2027 - 9:30 AM MST (Alberta) start",
+  "Monday, March 1, 2027 - 1:00 PM MST (Alberta) start",
+  "Tuesday, March 2, 2027 - 1:00 PM MST (Alberta) start",
+  "Wednesday, March 3, 2027 - 9:30 AM MST (Alberta) start",
+  "Wednesday, March 3, 2027 - 1:00 PM MST (Alberta) start",
+  "Thursday, March 4, 2027 - 9:30 AM MST (Alberta) start",
+  "Thursday, March 4, 2027 - 1:00 PM MST (Alberta) start",
+  "Friday, March 5, 2027 - 9:30 AM MST (Alberta) start",
+  "Friday, March 5, 2027 - 1:00 PM MST (Alberta) start",
 ];
 
 const AMIN_MSC_DEFENSE_OPTIONS = [

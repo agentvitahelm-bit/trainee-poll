@@ -16,28 +16,29 @@
   "response_deadline": "2026-11-24 16:00 MST (Alberta)",
   "timezone": "UTC−6; Microsoft Outlook: (UTC−06:00) Mountain Time (Alberta)",
   "options": [
-    "Tuesday, February 16, 2027 - 9:30 AM MST (Alberta) start",
-    "Tuesday, February 16, 2027 - 1:00 PM MST (Alberta) start",
-    "Wednesday, February 17, 2027 - 9:30 AM MST (Alberta) start",
-    "Wednesday, February 17, 2027 - 1:00 PM MST (Alberta) start",
-    "Thursday, February 18, 2027 - 9:30 AM MST (Alberta) start",
-    "Thursday, February 18, 2027 - 1:00 PM MST (Alberta) start",
-    "Friday, February 19, 2027 - 9:30 AM MST (Alberta) start",
-    "Friday, February 19, 2027 - 1:00 PM MST (Alberta) start",
     "Monday, February 22, 2027 - 9:30 AM MST (Alberta) start",
     "Monday, February 22, 2027 - 1:00 PM MST (Alberta) start",
     "Tuesday, February 23, 2027 - 9:30 AM MST (Alberta) start",
     "Tuesday, February 23, 2027 - 1:00 PM MST (Alberta) start",
     "Wednesday, February 24, 2027 - 9:30 AM MST (Alberta) start",
-    "Wednesday, February 24, 2027 - 1:00 PM MST (Alberta) start",
     "Thursday, February 25, 2027 - 9:30 AM MST (Alberta) start",
     "Thursday, February 25, 2027 - 1:00 PM MST (Alberta) start",
     "Friday, February 26, 2027 - 9:30 AM MST (Alberta) start",
-    "Friday, February 26, 2027 - 1:00 PM MST (Alberta) start"
+    "Friday, February 26, 2027 - 1:00 PM MST (Alberta) start",
+    "Monday, March 1, 2027 - 9:30 AM MST (Alberta) start",
+    "Monday, March 1, 2027 - 1:00 PM MST (Alberta) start",
+    "Tuesday, March 2, 2027 - 1:00 PM MST (Alberta) start",
+    "Wednesday, March 3, 2027 - 9:30 AM MST (Alberta) start",
+    "Wednesday, March 3, 2027 - 1:00 PM MST (Alberta) start",
+    "Thursday, March 4, 2027 - 9:30 AM MST (Alberta) start",
+    "Thursday, March 4, 2027 - 1:00 PM MST (Alberta) start",
+    "Friday, March 5, 2027 - 9:30 AM MST (Alberta) start",
+    "Friday, March 5, 2027 - 1:00 PM MST (Alberta) start"
   ],
   "notes": [
     "The first poll had six responses and no time available to all respondents.",
-    "This second poll covers the immediately following two work weeks after February 12, 2027.",
-    "Monday, February 15, 2027 is excluded because it is Alberta Family Day."
+    "The second-round window was shifted to February 22–March 5, 2027 after a newly recorded SPIE Medical Imaging travel conflict made February 16–19 unavailable.",
+    "The displayed options were rechecked against Ethan MacDonald’s live Exchange free/busy; Wednesday, February 24 at 1:00 PM and Tuesday, March 2 at 9:30 AM were excluded because they were not strictly free.",
+    "No Alberta general holiday falls within February 22–March 5, 2027."
   ]
 }
